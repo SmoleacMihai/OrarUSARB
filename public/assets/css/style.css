@@ -1,0 +1,236 @@
+body{
+    margin:0 auto;
+    width: 1280px;
+    background-color: #2B2B2B;
+}
+
+a{
+    text-decoration: none;
+}
+
+body div#orar{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    column-gap: 50px;
+}
+
+body div#orar div#time-zone{
+    display: grid;
+    grid-template-rows: repeat(9, 100px);
+    grid-template-columns: 1fr 3fr;
+}
+
+body div#orar div#time-zone figure{
+    margin: 0%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    place-self: center;
+    align-self: stretch;
+    display: grid;
+    grid-template-rows: 150px 40px;
+}
+
+body div#orar div#time-zone figure figcaption{
+    color: white;
+    font-style: bold;
+    justify-self: center;
+    font-size: 22px;
+}
+
+body div#orar div#time-zone figure img{
+    place-self: center;
+    width: 200px;
+    height: 130px;
+}
+
+body div#orar div#time-zone div.time-cell{
+    box-shadow: 5px 7px 5px black;
+    background-color: rgb(30, 144, 255);
+    padding: 1px;
+    border: 1px  solid white;
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color: white;
+    
+    border-bottom: none;
+}
+
+body div#orar div#time-zone div.info-cell{
+    box-shadow: 5px 7px 5px black;
+    background-color:white;
+    padding: 1px;
+    border: 1px solid black;
+    border-left-color:white ;
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color: black;
+}
+
+body div#orar div#selection-zone{
+    display: grid;
+    grid-template-rows: 80px 40px 50px auto 80px;
+    row-gap: 40px;
+}
+
+body div#orar div#selection-zone div#head{
+    font-weight: 800;
+    background-color: rgb(30, 144, 255);
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    font-family: nunito;
+    font-size: 22px;
+    color: white;
+    height: 40px;
+    border:1px rgb(30, 144, 255);
+    border-radius: 10px;
+}
+
+body div#orar div#selection-zone div#category-selection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px;
+    column-gap: 30px;
+    
+}
+
+body div#orar div#selection-zone div#category-selection div{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    place-self: center;
+    width: 185px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(30, 144, 255);
+    border: 1px rgb(30, 144, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body div#orar div#selection-zone div#category-selection div:hover{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    place-self: center;
+    width: 185px;
+    height: 27px;
+    text-align: center;
+    background-color: white;
+    border: 1px black;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+body div#orar div#selection-zone div#category-selection div.selected-page{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    place-self: center;
+    width: 185px;
+    height: 27px;
+    text-align: center;
+    background-color: white;
+    border: 1px black;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+body div#orar div#selection-zone div#search-bar{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+body div#orar div#selection-zone div#search-bar input{
+    outline: none;
+    border-radius: 10px;
+    align-self: stretch;
+    border: 2px rgb(30, 144, 255);
+
+}
+
+body div#orar div#selection-zone div#search-bar input[type="text"]{
+    color: black;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body div#orar div#selection-zone div#calendar div{
+    justify-self: stretch;
+    align-items: stretch;
+    background-color: white;
+    text-align: center;
+    padding: 0.5px;
+    border: 2px black solid;
+}
+
+
+
+body div#orar div#selection-zone div#calendar{
+    display: grid;
+    grid-template-columns: 100px repeat(7, auto);
+    grid-template-rows: 24px repeat(7, auto);;
+}
+
+body div#orar div#selection-zone div#calendar div.day-of-week{
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    background-color: rgb(30, 144, 255);
+    color: white;
+}
+
+body div#orar div#selection-zone div#calendar div.day-of-week:hover{
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+body div#orar div#selection-zone div#calendar div.ord-of-lecture{
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    background-color: rgb(30, 144, 255);
+    color: white;
+}
+
+body div#orar div#selection-zone div#calendar div input{
+    width: 95px;
+}
+
+body div#orar div#selection-zone div#legenda{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+body div#orar div#selection-zone div#apps a img{
+    width: 150px;
+    height: 35px;
+    place-self: center;
+}
+
+body div#orar div#selection-zone div#apps a{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    display: grid;
+}
